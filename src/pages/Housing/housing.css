@@ -1,37 +1,142 @@
 .housingContainer {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    flex-direction: column;
 }
 
-.housingContainer img.cover {
+.carousel {
+   margin-bottom: 30px;
+   width: 100%;
+   position: relative;
+}
+
+.carousel img.cover {
    height: 415px;
    width: 100%;
    object-fit: cover;
    border-radius: 25px;
 }
 
-.info img.hostCover {
+.carousel .arrow {
+   position: absolute;
+}
+
+.back {
+   left: 25px;
+}
+
+.next {
+   right: 25px;
+}
+
+.page {
+   bottom: 25px;
+   color: var(--secondary);
+   font-size: 1.125em;
+   font-weight: 500;
+}
+
+.info {
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px 0;
+   width: 100%;
+   color: var(--primary);
+}
+
+.info-header {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.title-container {
+   flex-direction: column;
+}
+
+.title {
+   font-size: 2.25em;
+   font-weight: 500;
+}
+
+.location {
+   font-size: 1.125em;
+   font-weight: 500;
+}
+
+.host-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.host-name {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   font-size: 1.125em;
+   font-weight: 500;
+}
+
+.info img.host-picture {
    height: 64px;
    width: 64px;
    object-fit: cover;
    border-radius: 50%;
 }
+.info-footer {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
 
-.info {
-   color: var(--primary);
+.tag-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.btn {
+   border-radius: 10px;
+   background-color: var(--primary);
+   color: var(--secondary);
 }
 
 .tag {
    padding: 5px 20px;
    height: 25px;
-   border-radius: 10px;
-   background-color: var(--primary);
-   color: var(--secondary);
    font-size: 0.875em;
    font-weight: 500;
+}
+
+.rating {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
+   gap: 5px;
+}
+
+.complement {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   gap: 75px;
+   align-items: center;
+}
+
+.description {
+   width: 50%;
+}
+
+.complement-title {
+   padding: 10px;
+   font-size: 1.125em;
+   font-weight: 500;
+   color: var(--secondary);
+}
+
+.equipement {
+   width: 50%;
 }

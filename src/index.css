@@ -34,3 +34,9 @@ header,
 main {
    padding: 45px 100px 0 100px;
 }
+
+.center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
