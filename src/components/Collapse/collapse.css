@@ -1,0 +1,49 @@
+.collapse-container {
+   margin-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.collapse-button {
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   border-radius: 10px;
+   background-color: var(--primary);
+   color: var(--secondary);
+}
+
+.collapse-text {
+   font-size: 1.125em;
+   font-weight: 500;
+}
+
+.collapse-container img {
+   position: absolute;
+   right: 10px;
+}
+
+.collapse-dropdown_menu {
+   margin-top: -10px;
+   padding: 20px;
+   border-radius: 0 0 5px 5px;
+   width: 100%;
+   font-size: 1.125em;
+   color: var(--primary);
+   background-color: #f6f6f6;
+}
+
+.reverse {
+   rotate: 180deg;
+}
+
+.test {
+   right: 50px !important;
+}
+
+.none {
+   display: none;
+}

@@ -5,6 +5,7 @@ import back from '../../assets/pictures/back.png';
 import next from '../../assets/pictures/next.png';
 import star from '../../assets/pictures/star.png';
 import emptyStar from '../../assets/pictures/emptyStar.png';
+import Collapse from '../../components/Collapse';
 
 function Housing() {
    const { id } = useParams();
@@ -85,22 +86,18 @@ function Housing() {
                            </div>
                         </div>
                      </div>
-                     {/* <div className="complement">
-                        <div className="description">
-                           <div className="complement-title btn">
-                              Description
-                           </div>
-                           {housingData.description}
-                        </div>
-                        <div className="equipement">
-                           <div className="complement-title btn">
-                              Equipement
-                           </div>
-                           {housingData.equipments.map((equipments) => (
-                              <div key={equipments}>{equipments}</div>
+                     <div className="complement">
+                        <Collapse
+                           title={'Description'}
+                           text={housingData.description}
+                        />
+                        <Collapse
+                           title={'Equipement'}
+                           text={housingData.equipments.map((equipement) => (
+                              <div key={equipement}>{equipement}</div>
                            ))}
-                        </div>
-                     </div> */}
+                        />
+                     </div>
                   </div>
                )}
             </div>
