@@ -1,0 +1,17 @@
+header {
+   /* padding: 45px 100px 0 100px; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   gap: 50px;
+}
+
+nav #link {
+   color: var(--primary);
+   font-size: 1.5em;
+}

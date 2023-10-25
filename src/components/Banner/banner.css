@@ -1,0 +1,19 @@
+.banner {
+   position: relative;
+   margin-bottom: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.banner img {
+   border-radius: 25px;
+   filter: brightness(70%);
+}
+
+.banner span {
+   position: absolute;
+   font-size: 3em;
+   font-weight: 500;
+   color: var(--secondary);
+}
