@@ -14,9 +14,10 @@
    border-radius: 10px;
    background-color: var(--primary);
    color: var(--secondary);
+   z-index: 100;
 }
 
-.collapse-text {
+.collapse-title {
    font-size: 1.125em;
    font-weight: 500;
 }
@@ -27,23 +28,28 @@
 }
 
 .collapse-dropdown_menu {
+   height: 0;
    margin-top: -10px;
-   padding: 20px;
+   overflow: hidden;
    border-radius: 0 0 5px 5px;
    width: 100%;
    font-size: 1.125em;
    color: var(--primary);
    background-color: #f6f6f6;
+   transition-duration: 0.3s;
+}
+
+.collapse-dropdown_menu-open {
+   height: initial;
+   padding: 20px;
+   transition-duration: 0.3s;
 }
 
 .reverse {
-   rotate: 180deg;
+   transition-duration: 0.3s;
+   rotate: -180deg;
 }
 
-.test {
-   right: 50px !important;
-}
-
-.none {
-   display: none;
+.arrow {
+   transition-duration: 0.3s;
 }

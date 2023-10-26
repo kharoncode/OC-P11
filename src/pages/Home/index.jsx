@@ -20,14 +20,15 @@ function Home() {
                   <div className="cardContainer">
                      {data.map((housing, index) => (
                         <Link
-                           to={`/housing/${index}`}
+                           /* to={`/housing/${index}`} */
+                           to={`/housing/${housing.id}`}
                            id="cardLink"
                            key={`${housing.id}-${index}`}
                         >
                            <Card
                               id={housing.id}
                               title={housing.title}
-                              //cover={housing.cover}
+                              cover={housing.cover}
                            />
                         </Link>
                      ))}

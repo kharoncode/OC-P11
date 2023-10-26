@@ -35,8 +35,16 @@ main {
    padding: 45px 100px 0 100px;
 }
 
+main {
+   flex-direction: column;
+}
+
 .center {
    display: flex;
    align-items: center;
    justify-content: center;
+}
+
+.none {
+   display: none;
 }

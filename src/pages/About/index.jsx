@@ -16,12 +16,14 @@ const about = {
 
 function About() {
    return (
-      <main>
+      <main className="center">
          <Banner url={banner} tagline="" />
-         <Collapse title={'Fiabilité'} text={about.fiabilite} />
-         <Collapse title={'Respect'} text={about.respect} />
-         <Collapse title={'Service'} text={about.service} />
-         <Collapse title={'Sécurité'} text={about.securite} />
+         <div className="about-collapse-container">
+            <Collapse title={'Fiabilité'} text={about.fiabilite} />
+            <Collapse title={'Respect'} text={about.respect} />
+            <Collapse title={'Service'} text={about.service} />
+            <Collapse title={'Sécurité'} text={about.securite} />
+         </div>
       </main>
    );
 }
