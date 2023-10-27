@@ -1,3 +1,9 @@
+@font-face {
+   font-family: 'Montserrat';
+   src: local('Montserrat'),
+      url('./assets/style/Montserrat-VariableFont_wght.ttf');
+}
+
 :root {
    --primary: #ff6060;
    --secondary: #ffffff;
@@ -30,13 +36,13 @@ ul {
    list-style-type: none;
 }
 
-header,
-main {
+header {
    padding: 45px 100px 0 100px;
 }
 
 main {
    flex-direction: column;
+   padding: 50px 100px 0 100px;
 }
 
 .center {
@@ -47,4 +53,14 @@ main {
 
 .none {
    display: none;
+}
+
+@media screen and (max-width: 750px) {
+   header {
+      padding: 20px 20px 0 20px;
+   }
+
+   main {
+      padding: 30px 20px 0 20px;
+   }
 }

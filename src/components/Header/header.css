@@ -18,3 +18,17 @@ nav #link {
 .active {
    text-decoration: underline;
 }
+
+@media screen and (max-width: 750px) {
+   nav {
+      gap: 25px;
+   }
+
+   .logo {
+      width: 145px;
+   }
+
+   nav #link {
+      font-size: 0.9em;
+   }
+}

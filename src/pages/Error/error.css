@@ -1,0 +1,49 @@
+.errorMain {
+   padding-top: 80px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   gap: 100px;
+   color: var(--primary);
+}
+
+.errorNumber {
+   /* font-size: 18em; */
+   text-align: center;
+   font-size: 18vw;
+   font-weight: 700;
+   line-height: 1em;
+}
+
+.errorMessage {
+   /* font-size: 2.25em; */
+   text-align: center;
+   font-size: 2.25vw;
+   font-weight: 500;
+}
+
+.errorMain #link {
+   margin-bottom: 100px;
+   color: var(--primary);
+   /* font-size: 1.125em; */
+   text-align: center;
+   font-size: 1.125vw;
+   font-weight: 500;
+   text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+   .errorMain {
+      padding-top: 50px;
+   }
+   .errorNumber {
+      font-size: 30vw;
+   }
+   .errorMessage {
+      font-size: 1.25em;
+   }
+   .errorMain #link {
+      font-size: 0.9em;
+   }
+}
