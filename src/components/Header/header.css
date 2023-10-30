@@ -10,7 +10,7 @@ nav {
    gap: 50px;
 }
 
-nav #link {
+nav .link {
    color: var(--primary);
    font-size: 1.5em;
 }
@@ -28,7 +28,7 @@ nav #link {
       width: 145px;
    }
 
-   nav #link {
+   nav .link {
       font-size: 0.9em;
    }
 }

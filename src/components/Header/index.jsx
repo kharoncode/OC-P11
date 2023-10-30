@@ -5,14 +5,14 @@ import './header.css';
 function Header() {
    return (
       <header>
-         <Link to="/" id="link">
+         <Link to="/" className="link">
             <img src={logo} alt="Kasa Logo" className="logo" />
          </Link>
          <nav>
-            <NavLink to="/" id="link">
+            <NavLink to="/" className="link">
                Acceuil
             </NavLink>
-            <NavLink to="/about" id="link">
+            <NavLink to="/about" className="link">
                A Propos
             </NavLink>
          </nav>

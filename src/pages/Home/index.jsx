@@ -24,9 +24,8 @@ function Home() {
                   <div className="cardContainer">
                      {data.map((housing, index) => (
                         <Link
-                           /* to={`/housing/${index}`} */
                            to={`/housing/${housing.id}`}
-                           id="cardLink"
+                           className="cardLink"
                            key={`${housing.id}-${index}`}
                         >
                            <Card

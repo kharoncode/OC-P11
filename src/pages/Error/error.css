@@ -23,7 +23,7 @@
    font-weight: 500;
 }
 
-.errorMain #link {
+.errorMain .link-error {
    margin-bottom: 100px;
    color: var(--primary);
    /* font-size: 1.125em; */
@@ -43,7 +43,7 @@
    .errorMessage {
       font-size: 1.25em;
    }
-   .errorMain #link {
+   .errorMain .link-error {
       font-size: 0.9em;
    }
 }

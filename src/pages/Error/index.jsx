@@ -8,7 +8,7 @@ function Error() {
          <div className="errorMessage">
             Oups! La page que vous demandez n'existe pas.
          </div>
-         <Link to="/" id="link">
+         <Link to="/" className="link-error">
             Retourner sur la page d’accueil
          </Link>
       </main>
