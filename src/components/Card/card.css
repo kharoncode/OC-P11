@@ -36,3 +36,13 @@
    font-weight: 500;
    color: var(--secondary);
 }
+
+@media screen and (max-width: 750px) {
+   .card {
+      height: 255px;
+   }
+
+   .card img {
+      height: 255px;
+   }
+}

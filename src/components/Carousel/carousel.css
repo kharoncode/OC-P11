@@ -19,6 +19,7 @@
 
 .arrow {
    position: absolute;
+   cursor: pointer;
 }
 
 .back {
@@ -34,4 +35,24 @@
    color: var(--secondary);
    font-size: 1.125em;
    font-weight: 500;
+}
+
+@media screen and (max-width: 750px) {
+   .carousel img.cover {
+      height: 255px;
+   }
+   .arrow {
+      height: 20px;
+   }
+   .back {
+      left: 5px;
+   }
+
+   .next {
+      right: 5px;
+   }
+
+   .page {
+      display: none;
+   }
 }

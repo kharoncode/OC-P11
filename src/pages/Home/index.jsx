@@ -9,7 +9,11 @@ function Home() {
    const { data, error, isLoading } = useFetch('./data/logements.json');
    return (
       <main>
-         <Banner url={banner} tagline="Chez vous, partout et ailleurs" />
+         <Banner
+            url={banner}
+            taglineUp="Chez vous,"
+            taglineDown="partout et ailleurs"
+         />
          {error ? (
             <div>Il y a une erreur !</div>
          ) : (

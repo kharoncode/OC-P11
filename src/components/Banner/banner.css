@@ -8,14 +8,44 @@
 }
 
 .banner img {
+   object-fit: cover;
+   height: 223px;
    width: 100%;
    border-radius: 25px;
    filter: brightness(70%);
 }
 
-.banner span {
+.taglineContainer {
    position: absolute;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   width: 100%;
+   padding: 10px;
+}
+
+.banner span {
    font-size: 3em;
    font-weight: 500;
    color: var(--secondary);
+}
+
+@media screen and (max-width: 950px) {
+   .taglineContainer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .banner img {
+      height: 111px;
+      border-radius: 10px;
+   }
+
+   .banner span {
+      font-size: 1.5em;
+      left: 0;
+   }
 }

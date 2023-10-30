@@ -4,3 +4,15 @@
    align-items: center;
    gap: 5px;
 }
+
+@media screen and (max-width: 750px) {
+   .rating img {
+      width: 13px;
+   }
+
+   .rating {
+      grid-column: 1;
+      grid-row: 3;
+      justify-self: start;
+   }
+}

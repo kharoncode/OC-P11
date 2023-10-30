@@ -7,11 +7,12 @@
 
 .collapse-button {
    width: 100%;
+   height: 52px;
    padding: 10px;
    display: flex;
    align-items: center;
    position: relative;
-   border-radius: 10px;
+   border-radius: 5px;
    background-color: var(--primary);
    color: var(--secondary);
    z-index: 100;
@@ -39,6 +40,10 @@
    transition-duration: 0.3s;
 }
 
+.collapse-dropdown_menu div {
+   font-size: 1em;
+}
+
 .collapse-dropdown_menu-open {
    height: initial;
    padding: 20px;
@@ -52,4 +57,21 @@
 
 .arrow {
    transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 750px) {
+   .collapse-button {
+      height: 30px;
+   }
+   .collapse-title {
+      font-size: 0.8125em;
+   }
+   .collapse-container img {
+      width: 16px;
+      height: 9px;
+   }
+
+   .collapse-dropdown_menu {
+      font-size: 0.75em;
+   }
 }

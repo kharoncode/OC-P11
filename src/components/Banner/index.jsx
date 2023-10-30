@@ -1,10 +1,13 @@
 import './banner.css';
 
-function Banner({ url, tagline }) {
+function Banner({ url, taglineUp, taglineDown }) {
    return (
       <div className="banner">
          <img src={url} alt="banner" />
-         <span>{tagline}</span>
+         <div className="taglineContainer">
+            <span>{taglineUp}</span>
+            <span>{taglineDown}</span>
+         </div>
       </div>
    );
 }

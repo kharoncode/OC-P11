@@ -16,3 +16,13 @@ footer p {
    font-size: 1.5em;
    font-weight: 500;
 }
+
+@media screen and (max-width: 750px) {
+   footer img {
+      width: 122px;
+   }
+
+   footer p {
+      font-size: 0.75em;
+   }
+}
